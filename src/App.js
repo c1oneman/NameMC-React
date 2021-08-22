@@ -1,14 +1,12 @@
-import "./styles/App.css";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <header>
-          <Link to="/">
-            <h1>NameMC</h1>
-          </Link>
+          <Nav />
         </header>
         <Switch>
           <Route path="/profile/:id">{/* <Details /> */}</Route>
