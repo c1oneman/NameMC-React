@@ -1,15 +1,19 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
-
+import Input from "./components/Input";
+import Profile from "./components/Profile";
 function App() {
   return (
-    <div className="App">
+    <div className="dark:bg-gray-800 min-h-screen mx-auto px-2 sm:px-6 lg:px-8 bg-gray-300">
       <Router>
         <header>
           <Nav />
+          <Input />
         </header>
         <Switch>
-          <Route path="/profile/:id">{/* <Details /> */}</Route>
+          <Route path="/profile/:id">
+            <Profile />
+          </Route>
         </Switch>
       </Router>
     </div>
