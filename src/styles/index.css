@@ -59,7 +59,21 @@ textarea,
 select {
   font: inherit;
 }
+input[type="text"] {
+  /* Remove First */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
+  /* Then Style */
+  border-radius: 15px;
+  border: 1px dashed #bbb;
+  padding: 10px;
+  line-height: 20px;
+  text-align: center;
+  background: transparent;
+  outline: none;
+}
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {

@@ -27,13 +27,14 @@ const Input = () => {
             className="w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none rounded-l"
             type="text"
             value={userID}
+            autoComplete="off"
             onChange={(e) => {
               let val = e.target.value;
-              val = val.replace(/\s/g, '');
+              val = val.replace(/\s/g, "");
               setUserID(val);
               setLoading(false);
             }}
-            placeholder="IGN / UUID / Server"
+            placeholder="IGN / UUID"
           />
           {userID.length > 0 && (
             <button
