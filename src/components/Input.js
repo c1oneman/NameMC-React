@@ -28,7 +28,9 @@ const Input = () => {
             type="text"
             value={userID}
             onChange={(e) => {
-              setUserID(e.target.value);
+              let val = e.target.value;
+              val = val.replace(/\s/g, '');
+              setUserID(val);
               setLoading(false);
             }}
             placeholder="IGN / UUID / Server"
