@@ -30,7 +30,7 @@ const PlayerModel = () => {
   }, [animate]);
 
   return (
-    <div className="mx-auto mt-2 p-2 rounded bg-gray-700">
+    <div className="mt-2 p-2 rounded bg-gray-700">
       <button
         className="text-gray-700 dark:text-white dark:bg-gray-500 mx-1 bg-gray-200 hover:bg-gray-400 px-3 py-2 rounded-md text-sm font-medium dark:hover:bg-gray-600"
         onClick={(e) => {

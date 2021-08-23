@@ -21,8 +21,8 @@ const Input = () => {
         }
       }}
     >
-      <div className="flex flex-wrap -mx-3 mb-6">
-        <div className="w-full px-3 mb-6 md:mb-0 flex">
+      <div className="flex flex-wrap -mx-3">
+        <div className="w-full px-3 md:mb-0 flex">
           <input
             className="w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none rounded-l"
             type="text"
