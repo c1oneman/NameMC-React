@@ -2,7 +2,7 @@ import DetailBox from "./DetailBox";
 const AccountDetails = () => {
   return (
     <div className="px-2 my-2 rounded bg-gray-200 dark:bg-gray-700 text-lg">
-      <div className="border-b-2 border-gray-600">
+      <div className="border-b-2 border-gray-300 dark:border-gray-800">
         <h1 className="dark:text-gray-50 text-gray-800 font-bold py-2">
           Minecraft Profile
         </h1>
