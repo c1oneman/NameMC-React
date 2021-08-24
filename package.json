@@ -15,6 +15,7 @@
     "react-scripts": "4.0.3",
     "skinview3d": "^2.0.1",
     "three": "^0.131.3",
+    "use-clipboard-copy": "^0.2.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
