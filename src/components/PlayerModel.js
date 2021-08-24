@@ -10,7 +10,7 @@ const PlayerModel = () => {
   useEffect(() => {
     let skinViewer = new FXAASkinViewer({
       canvas: document.getElementById("skin_container"),
-      width: 300,
+      width: 200,
       height: 400,
       skin: "/NotClay.png",
     });
@@ -53,8 +53,8 @@ const PlayerModel = () => {
         </button>
       </div>
 
-      <div className="flex items-center justify-center cursor-move w-full">
-        <canvas id="skin_container"></canvas>
+      <div className="flex items-center justify-center w-full">
+        <canvas id="skin_container" className="cursor-move"></canvas>
       </div>
     </div>
   );

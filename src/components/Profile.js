@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
       <div className="flex flex-wrap">
-        <div className="w-full mb-6 md:mb-0 flex items-center justify-center sm:justify-start border-b-2 border-gray-800 dark:border-gray-300 ">
+        <div className="w-full mb-6 mx-2 md:mb-0 flex items-center justify-center sm:justify-start border-b-2 border-gray-800 dark:border-gray-500">
           <img
             alt={`${ign}'s head`}
             src={`https://mc-heads.net/avatar/${ign}/100`}
