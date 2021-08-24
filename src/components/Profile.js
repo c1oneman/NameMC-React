@@ -1,5 +1,6 @@
 import PlayerModel from "./PlayerModel";
 import AccountDetails from "./AccountDetails";
+import NameHistory from "./NameHistory";
 const Profile = () => {
   const ign = "NotClay";
   return (
@@ -21,6 +22,7 @@ const Profile = () => {
           </div>
           <div className="flex flex-col w-full sm:w-2/3 px-1">
             <AccountDetails />
+            <NameHistory />
           </div>
         </div>
       </div>
