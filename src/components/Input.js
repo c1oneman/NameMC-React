@@ -50,7 +50,7 @@ const Input = () => {
           )}
           <button
             type="submit"
-            className="w-20 py-3 px-4bg-gray-200 hover:bg-green-400 rounded-r"
+            className="w-20 py-3 px-4 bg-gray-200 hover:bg-green-400 rounded-r"
           >
             {isLoading ? (
               <Loader type="Grid" color="#000000" height={20} width={40} />
