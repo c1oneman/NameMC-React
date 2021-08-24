@@ -2,7 +2,6 @@ import {
   FXAASkinViewer,
   createOrbitControls,
   WalkingAnimation,
-  RotatingAnimation,
 } from "skinview3d";
 import { useEffect, useState } from "react";
 const PlayerModel = () => {
