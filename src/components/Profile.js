@@ -1,4 +1,5 @@
 import PlayerModel from "./PlayerModel";
+import AccountDetails from "./AccountDetails";
 const Profile = () => {
   const ign = "NotClay";
   return (
@@ -19,8 +20,7 @@ const Profile = () => {
             <PlayerModel user={ign} />
           </div>
           <div className="flex flex-col w-full sm:w-2/3 px-6">
-            <h1>Text Text blah</h1>
-            {/* <ProfileInfo/> */}
+            <AccountDetails />
           </div>
         </div>
       </div>

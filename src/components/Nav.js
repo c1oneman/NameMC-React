@@ -14,12 +14,13 @@ const Nav = () => {
               height="30"
               fill="white"
             >
-              <path d="M-5-5L+3-5L+3-3L+5-3L+5+5L+3+5L+3-3L-3-3L-3+5L-5+5"></path>
+              <path d="M-2+3L+2+3L+2-3L+4-3L+4+5L-2+5L-2+3L-4+3L-4-3L-2-3"></path>
             </svg>
-            <span className="ml-2 text-white" translate="no">
-              NameMC React*
+            <span className="text-white" translate="no">
+              uuidMC
             </span>
           </div>
+
           <div className="hidden sm:block sm:ml-6">
             <div className="flex space-x-4">
               <Link

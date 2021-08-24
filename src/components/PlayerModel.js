@@ -22,11 +22,9 @@ const PlayerModel = () => {
     control.enableZoom = false;
     control.enablePan = true;
     let walk = skinViewer.animations.add(WalkingAnimation);
-    let rotate = skinViewer.animations.add(RotatingAnimation);
+
     walk.paused = !animate;
-    rotate.paused = !animate;
     walk.speed = 0.5;
-    rotate.speed = 0.2;
   }, [animate]);
 
   return (
