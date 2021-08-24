@@ -27,10 +27,10 @@ const PlayerModel = () => {
   }, [animate]);
 
   return (
-    <div className="mt-2 p-2 rounded bg-gray-200 dark:bg-gray-700 flex flex-col items-start">
+    <div className="mt-2 p-2 rounded bg-gray-700 flex flex-col items-start checkers dark:checkers-dark">
       <div className="flex items-start">
         <button
-          className="text-gray-700 dark:text-white dark:bg-gray-500 mx-1 bg-gray-200 hover:bg-gray-400 px-3 py-2 rounded-md text-sm font-medium dark:hover:bg-gray-600"
+          className="text-gray-700 dark:text-white dark:bg-gray-500 mx-1 bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium dark:hover:bg-gray-600"
           onClick={(e) => {
             e.preventDefault();
             setAnimate(!animate);
@@ -39,10 +39,7 @@ const PlayerModel = () => {
           {!animate ? "Play" : "Stop"}
         </button>
         <button
-          className={`dark:text-white ${
-            showCape ? "bg-gray-200" : ""
-          } hover:bg-gray-400 dark:bg-gray-500 px-3 py-2 rounded-md text-sm font-medium dark:hover:bg-gray-600 border-1 ${
-            showCape ? "text-gray-700" : "text-gray-200"
+          className={`text-gray-700 dark:text-white dark:bg-gray-500 mx-1 bg-gray-200 hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium dark:hover:bg-gray-600"
           }`}
           onClick={(e) => {
             e.preventDefault();

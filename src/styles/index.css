@@ -80,3 +80,8 @@ input[type="text"] {
     scroll-behavior: auto !important;
   }
 }
+
+.checkers {
+  background: repeating-conic-gradient(#374151 0% 25%, #1f2937 0% 50%) 50% /
+    30px 30px;
+}
