@@ -7,7 +7,7 @@ const Input = () => {
   const [isLoading, setLoading] = useState(false);
   return (
     <form
-      className="max-w-7xl mx-2 px-2 sm:px-6 lg:px-8"
+      className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 "
       onSubmit={(e) => {
         e.preventDefault();
         if (userID.length > 0) {
