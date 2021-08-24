@@ -4,7 +4,7 @@ import Input from "./components/Input";
 import Profile from "./components/Profile";
 function App() {
   return (
-    <div className="dark:bg-gray-800 min-h-screen mx-auto px-2 sm:px-6 lg:px-8 bg-gray-300">
+    <div className="dark:bg-gray-800 min-h-screen mx-auto sm:px-6 lg:px-8 bg-gray-300">
       <Router>
         <header>
           <Nav />
