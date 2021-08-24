@@ -22,7 +22,7 @@ const Input = () => {
       }}
     >
       <div className="flex flex-wrap">
-        <div className="w-full px-3 md:mb-0 flex bg-gray-200 rounded">
+        <div className="w-full pl-3 md:mb-0 flex bg-gray-200 rounded">
           <input
             className="w-full bg-gray-200 text-gray-700 border leading-tight focus:outline-none border-r-0 rounded-l"
             type="text"
