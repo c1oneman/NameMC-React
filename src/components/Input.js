@@ -21,10 +21,10 @@ const Input = () => {
         }
       }}
     >
-      <div className="flex flex-wrap -mx-3">
-        <div className="w-full px-3 md:mb-0 flex">
+      <div className="flex flex-wrap">
+        <div className="w-full px-3 md:mb-0 flex bg-gray-200 rounded">
           <input
-            className="w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none border-r-0 rounded-l"
+            className="w-full bg-gray-200 text-gray-700 border leading-tight focus:outline-none border-r-0 rounded-l"
             type="text"
             value={userID}
             autoComplete="off"
@@ -43,14 +43,14 @@ const Input = () => {
                 setUserID("");
               }}
               type="reset"
-              className="w-15 py-3 px-4 mb-3 bg-red-200 hover:bg-red-400"
+              className="w-15 py-3 px-4 bg-red-200 hover:bg-red-400"
             >
               <i className="fa fa-times-circle" />
             </button>
           )}
           <button
             type="submit"
-            className="w-20 py-3 px-4 mb-3 bg-gray-200 hover:bg-green-400 rounded-r"
+            className="w-20 py-3 px-4bg-gray-200 hover:bg-green-400 rounded-r"
           >
             {isLoading ? (
               <Loader type="Grid" color="#000000" height={20} width={40} />
