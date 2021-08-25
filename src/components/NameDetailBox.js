@@ -20,8 +20,11 @@ const DetailBox = ({ name, date, num }) => {
       <div className="flex flex-col w-full">
         <div className="flex justify-between">
           <h1 className="font-bold">{name}</h1>
-          <button onClick={handleCopy} className="cursor-pointer">
-            {clipboard.copied ? "Copied" : "Copy"}
+          <button
+            onClick={handleCopy}
+            className={!clipboard.copied ? "cursor-pointer" : "cursor-default"}
+          >
+            {clipboard.copied ? "Copied!" : "Copy"}
           </button>
         </div>
         <div>

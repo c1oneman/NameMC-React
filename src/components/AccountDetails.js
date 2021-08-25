@@ -15,7 +15,7 @@ const AccountDetails = () => {
         title={"S. UUID"}
         content={"7fd69f79ca9545f7a4bd13db478bc762"}
       />
-      <DetailBox title={"Link"} link={"https://uuidmc.com/profile/NotClay"} />
+      <DetailBox title={"Link"} link={"uuidmc.com/profile/NotClay"} />
     </div>
   );
 };
