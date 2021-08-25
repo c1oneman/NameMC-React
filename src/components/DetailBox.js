@@ -17,13 +17,16 @@ const DetailBox = ({ title, content, link }) => {
     <div className="my-2 flex flex-col dark:text-gray-50 text-gray-800">
       <div className="flex justify-between">
         <h1 className="font-bold">{title}</h1>
-        <button onClick={handleCopy} className="cursor-pointer">
-          {clipboard.copied ? "Copied" : "Copy"}
+        <button
+          onClick={handleCopy}
+          className={!clipboard.copied ? "cursor-pointer" : "cursor-default"}
+        >
+          {clipboard.copied ? "Copied!" : "Copy"}
         </button>
       </div>
       <div>
         <a
-          href={link}
+          href={("https://", link)}
           className="hover:text-gray-700 dark:hover:text-gray-300"
           target="_blank"
           alt="Share link"
