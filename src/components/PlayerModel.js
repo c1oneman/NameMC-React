@@ -4,7 +4,7 @@ import {
   WalkingAnimation,
 } from "skinview3d";
 import { useEffect, useState } from "react";
-const PlayerModel = () => {
+const PlayerModel = ({ skin }) => {
   const [animate, setAnimate] = useState(true);
   const [showCape, setCape] = useState(true);
   useEffect(() => {
@@ -12,7 +12,7 @@ const PlayerModel = () => {
       canvas: document.getElementById("skin_container"),
       width: 200,
       height: 400,
-      skin: "/NotClay.png",
+      skin: skin,
     });
 
     skinViewer.loadCape(null);
@@ -24,7 +24,7 @@ const PlayerModel = () => {
 
     walk.paused = !animate;
     walk.speed = 0.5;
-  }, [animate]);
+  }, [animate, skin]);
 
   return (
     <div className="mt-2 p-2 rounded bg-gray-700 flex flex-col items-start checkers dark:checkers-dark">

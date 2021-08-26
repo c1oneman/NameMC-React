@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Loader from "react-loader-spinner";
+import { useHistory } from "react-router-dom";
 
 const Input = () => {
   const [userID, setUserID] = useState("");
   //const [search, setSearch] = useState("");
   const [isLoading, setLoading] = useState(false);
+  let history = useHistory();
   return (
     <form
       className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 "
@@ -16,6 +18,7 @@ const Input = () => {
             //setSearch(userID);
             console.log(userID);
           }
+          history.push(`/u/${userID}`);
           // Toggle the spinner / cancel loading
           setLoading(!isLoading);
         }

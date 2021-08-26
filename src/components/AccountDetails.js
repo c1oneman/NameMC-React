@@ -1,5 +1,5 @@
 import DetailBox from "./DetailBox";
-const AccountDetails = () => {
+const AccountDetails = ({ ign, uuid }) => {
   return (
     <div className="px-3 my-2 rounded bg-gray-200 dark:bg-gray-700 text-lg">
       <div className="border-b-2 border-gray-300 dark:border-gray-600">
@@ -7,15 +7,9 @@ const AccountDetails = () => {
           Minecraft Profile
         </h1>
       </div>
-      <DetailBox
-        title={"UUID"}
-        content={"7fd69f79-ca95-45f7-a4bd-13db478bc762"}
-      />
-      <DetailBox
-        title={"S. UUID"}
-        content={"7fd69f79ca9545f7a4bd13db478bc762"}
-      />
-      <DetailBox title={"Link"} link={"uuidmc.com/profile/NotClay"} />
+
+      <DetailBox title={"UUID"} content={`${uuid}`} />
+      <DetailBox title={"Link"} content={`uuidmc.com/u/${ign}`} />
     </div>
   );
 };

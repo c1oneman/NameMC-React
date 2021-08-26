@@ -1,8 +1,26 @@
 import PlayerModel from "./PlayerModel";
 import AccountDetails from "./AccountDetails";
 import NameHistory from "./NameHistory";
+import Capes from "./CapeDetails";
+import { getProfile, getCapes } from "../helpers/ProfileFunctions";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 const Profile = () => {
-  const ign = "NotClay";
+  let { ign } = useParams();
+
+  const [profile, setProfile] = useState({});
+  const [capes, setCapes] = useState({});
+  useEffect(() => {
+    const loadProfile = async () => {
+      const profileObject = await getProfile(ign);
+      setProfile(profileObject);
+      const profileCapes = await getCapes(ign);
+      setCapes(profileCapes);
+    };
+    loadProfile(ign);
+    console.log(ign);
+  }, [ign]);
+
   return (
     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
       <div className="flex flex-wrap">
@@ -18,10 +36,11 @@ const Profile = () => {
         </div>
         <div className="flex flex-wrap w-full justify-center sm:justify-start">
           <div className="flex flex-col w-full sm:w-1/3 px-1">
-            <PlayerModel user={ign} />
+            <PlayerModel skin={profile.skin} />
+            <Capes capes={capes} />
           </div>
           <div className="flex flex-col w-full sm:w-2/3 px-1">
-            <AccountDetails />
+            <AccountDetails uuid={profile.uuid} ign={ign} />
             <NameHistory />
           </div>
         </div>

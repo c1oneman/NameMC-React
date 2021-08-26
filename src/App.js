@@ -11,7 +11,7 @@ function App() {
           <Input />
         </header>
         <Switch>
-          <Route path="/profile/:id">
+          <Route path="/u/:ign">
             <Profile />
           </Route>
         </Switch>
